@@ -10,9 +10,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="/application/views/layui/css/layui.css">
-        <script src="/application/views/layui/jquery-3.3.1.min.js"></script>
-        <script src="/application/views/layui/layui.js"></script>
+        <link rel="stylesheet" type="text/css" href="../layui/css/layui.css"/>
+        <script src="../layui/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../layui/layui.js" type="text/javascript" charset="utf-8"></script>
         <title>校园快递系统</title>
     </head>
     <!-- ------------------------------------------------------------------------------------------------------------------------------------------ -->
@@ -21,21 +21,23 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <!-- 页面导航栏 -->
         <div class="header">
             <ul class="layui-nav">
-                <li class="layui-nav-item"><a href="/application/views/front/home_0.html">校 园 智 能 快 递 系 统</a></li>
-                <li class="layui-nav-item"><a href="/application/views/front/home_0.html">主页</a></li>
-                <li class="layui-nav-item"><a href="">个人中心</a></li>
+                <li class="layui-nav-item"><a href="../index.html">校 园 智 能 快 递 系 统</a></li>
+                <li class="layui-nav-item "><a href="../index.html">主页</a></li>
+                <li class="layui-nav-item"><a href="stu_info.html">个人中心</a></li>
                 <li class="layui-nav-item">
                     <a href="javascript:;">网站详情</a>
                     <dl class="layui-nav-child">
                         <!-- 二级菜单 -->
-                        <dd><a href="/application/views/front/home_1.html">开发环境</a></dd>
-                        <dd><a href="/application/views/front/home_2.html">开发人员</a></dd>
-                        <dd><a href="/application/views/front/home_3.html">开发历程</a></dd>
+                        <dd><a href="home_1.html">开发环境</a></dd>
+                        <dd><a href="home_2.html">开发人员</a></dd>
+                        <dd><a href="home_3.html">开发历程</a></dd>
                     </dl>
                 </li>
-                <li class="layui-nav-item layui-col-md-offset7"><a href="">后台</a></li>
+                <li class="layui-nav-item layui-col-md-offset6"><a href="#">后台</a></li>
             </ul>
         </div>
+        <!-- ------------------------------------------------------------------------------------------------------------------------------------------ -->
+
         <!-- 页面内容 -->
         <div class="content">
             <!-- 页面居中 -->
@@ -47,12 +49,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div style="height: 650px;">
                             <br><br><br><br>
                             <!-- 系统头像 -->
-                            <img src="/application/views/img/279880.jpg" alt="系统头像" class="center-block img-circle" style="width: 220px; height: 220px;">
+                            <img src="../pic/5.jpg" alt="系统头像" class="center-block img-circle" style="width: 220px; height: 220px;">
                             <br><br><br>
                             <h1 class="text-center">欢迎使用</h1>
                             <h1 class="text-center">校园智能快递系统</h1>
                         </div>
                     </div>
+                    <!-- ------------------------------------------------------------------------------------------------------------------------------------------ -->
+
                     <!-- 右边开发历程窗口 -->
                     <div class="layui-col-md9 layui-bg-gray " style="height: 600px;">
                         <br>
@@ -107,8 +111,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </div>
             </div>
         </div>
-        </div>
-        <!-- ------------------------------------------------------------------------------------------------------------------------------------------ -->
+
+        <!-- -------------------------关于----------------------------------------------------------------------------------------------------------------- -->
         <!-- 版权信息 -->
         <div class="footer" style=" bottom:0; height: 160px; width: 100%;">
             <div class="layui-bg-black " style="height: 160px; width: 100%;">
@@ -132,10 +136,27 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         });
     </script>
     <script>
-        //注意：折叠面板 依赖 element 模块，否则无法进行功能性操作
-        layui.use('element', function() {
-            var element = layui.element;
+        //Demo
+        layui.use('form', function() {
+            var form = layui.form;
 
-            //…
+            //监听提交
+            form.on('submit(formDemo)', function(data) {
+                layer.msg(JSON.stringify(data.field));
+                return false;
+            });
+        });
+    </script>
+    <script>
+        layui.use('carousel', function() {
+            var carousel = layui.carousel;
+            //建造实例
+            carousel.render({
+                elem: '#test1',
+                width: '100%', //设置容器宽度
+                height: '345px', //设置容器高度
+                arrow: 'hover', //悬停显示箭头
+                autoplay: 'true' //自动播放
+            });
         });
     </script>
