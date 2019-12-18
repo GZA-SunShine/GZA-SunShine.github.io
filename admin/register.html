@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../layui/css/layui.css" />
+    <script src="../layui/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../layui/layui.js" type="text/javascript" charset="utf-8"></script>
+    <title>后台管理系统</title>
+</head>
+<body class="layui-layout-body">
+    <div class="layui-layout layui-layout-admin">
+        <div class="layui-header">
+            <div class="layui-logo">校园快递管理系统后台</div>
+            <!-- 头部区域（可配合layui已有的水平导航） -->
+            <ul class="layui-nav layui-layout-left">
+                <li class="layui-nav-item"><a href="about.html">关于系统</a></li>
+                <li class="layui-nav-item"><a href="register.html">添加管理</a></li>
+                <li class="layui-nav-item"><a href="admin.html">退出</a></li>
+            </ul>
+        </div><div class="layui-side layui-bg-black">
+    <div class="layui-side-scroll">
+        <br>
+        <div><img class="img-circle center-block" src="../pic/root.jpg" alt="管理头像" style="width: 170px; height: 170px;"></div>
+        <br><br><br>
+        <h1 class="text-center ">欢迎登陆</h1>
+        <hr>
+        <!-- <h3 class="text-center ">用户：
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined variable: log</p>
+<p>Filename: content_left/content_left_info.php</p>
+<p>Line Number: 8</p>
+
+
+	<p>Backtrace:</p>
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: D:\phpstudy\WWW\mmd\application\views\admin\content_left\content_left_info.php<br />
+			Line: 8<br />
+			Function: _error_handler			</p>
+
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: D:\phpstudy\WWW\mmd\application\controllers\admin\user.php<br />
+			Line: 35<br />
+			Function: view			</p>
+
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: D:\phpstudy\WWW\mmd\index.php<br />
+			Line: 315<br />
+			Function: require_once			</p>
+
+		
+	
+
+</div></h3> -->
+        <h3 class="text-center ">状态：尚未登陆...</h3>
+        <hr>
+        <h3 class="text-center ">系统时间：</h3>
+        <br>
+        <h4>
+        Wed, 18 Dec 19 23:16:57 +0800        </h4>
+    </div>
+</div><div class="layui-body">
+            <!-- 内容主体区域 -->
+            <br>
+            <h1 class="text-center ">添加管理员</h1>
+            <hr>
+            <div>
+                <form class="layui-form"  method="post" action="http://127.0.0.1/index.php/admin/user/register_do.html?>">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">姓名:</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="name" required lay-verify="required" placeholder="请输入姓名..." autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">帐号:</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="log" required lay-verify="required" placeholder="请输入帐号..." autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">密码:</label>
+                        <div class="layui-input-block">
+                            <input type="password" name="pwd" required lay-verify="required" placeholder="请输入密码..." autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <button class="layui-btn layui-btn-radius" lay-submit lay-filter="formDemo">提交</button>
+                            <button type="reset" class="layui-btn layui-btn-radius layui-btn-primary">清除</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="layui-carousel" id="test1">
+                    <div carousel-item>
+                        <div class="layui-bg-green"></div>
+                        <div class="layui-bg-gray"></div>
+                        <div class="layui-bg-orange"></div>
+                        <div class="layui-bg-blue"></div>
+                        <div class="layui-bg-black"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layui-footer">
+            <!-- 底部固定区域 -->
+            <p><strong>MMD。</strong>&copy <em> 2019 @github</em> 版权所有 <strong>GSJ</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong><em> .\_/.</em></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="https://gza-sunshine.github.io">https://gza-sunshine.github.io</a></strong></p>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script src="../src/layui.js"></script>
+<script>
+    //JavaScript代码区域
+    layui.use('element', function() {
+        var element = layui.element;
+
+    });
+</script>
+
+<script>
+    layui.use('carousel', function() {
+        var carousel = layui.carousel;
+        //建造实例
+        carousel.render({
+            elem: '#test1',
+            width: '100%', //设置容器宽度
+            height: '345px', //设置容器高度
+            arrow: 'hover', //悬停显示箭头
+            autoplay: 'true' //自动播放
+        });
+    });
+</script>
