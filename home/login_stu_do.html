@@ -1,294 +1,299 @@
+<!-- 防止直接访问文件 -->
+<!DOCTYPE html>
+<html lang="en">
 
-    <!-- 防止直接访问文件 -->
-    <!DOCTYPE html>
-    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../layui/css/layui.css" />
+    <script src="../layui/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../layui/layui.js" type="text/javascript" charset="utf-8"></script>
+    <title>学生中心</title>
+</head>
+<!-- 防止直接访问文件 -->
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" type="text/css" href="../layui/css/layui.css"/>
-        <script src="../layui/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="../layui/layui.js" type="text/javascript" charset="utf-8"></script>
-        <title>学生中心</title>
-    </head><!-- 防止直接访问文件 -->
 <body>
     <!-- 页面导航栏 -->
     <div class="header">
         <ul class="layui-nav">
-            <li class="layui-nav-item"><a href="../index.html">校 园 智 能 快 递 系 统</a></li>
+            <li class="layui-nav-item"><a href="#">校 园 智 能 快 递 系 统</a></li>
             <li class="layui-nav-item"><a href="#">个人中心/学生</a></li>
-            <li class="layui-nav-item"><a href="../index.html">退出</a></li>
+            <li class="layui-nav-item"><a href="home.html">退出</a></li>
         </ul>
-    </div><!-- 防止直接访问文件 -->
-<!-- 页面内容 -->
-<div class="content">
-            <!-- 页面居中 -->
-            <div class="layui-container" style="height: 600px;">
-                <!-- 页面栅格化 3：9 -->
-                <div class="layui-row ">
-                    <!-- 左边系统头像 -->
-                    <div class="layui-col-md3 layui-bg-cyan" style="height: 600px;">
-                        <div style="height: 650px;">
-                            <br><br><br><br>
-                            <!-- 系统头像 -->
-                            <img src="../pic/stu.jpg" alt="系统头像" class="center-block img-circle" style="width: 220px; height: 220px;">
-                            <br><br><br>
-                            <h1 class="text-center ">你好, 李现</h1>
-                            <hr>
-                            <h3 class="text-center ">用户：10010</h3>
-                            <hr>
-                            <h3 class="text-center">帐号：学生</h3>
-                        </div>
-                    </div><!-- 右边个人信息窗口 -->
-<div class="layui-col-md9">
-                        <div class="layui-tab layui-tab-card">
-                            <ul class="layui-tab-title">
-                                <li class="layui-this">包裹详情</li>
-                                <li>寄件</li>
-                            </ul>
-                            <div class="layui-tab-content" style="height: 527px;">
-                                <div class="layui-tab-item layui-show">
-                                                                            <div class="layui-collapse">
-                                            <div class="layui-colla-item">
-                                                <h2 class="layui-colla-title">顺丰快递</h2>
-                                                <div class="layui-colla-content layui-show">
-                                                    <div class="layui-row">
-                                                        <div class="layui-col-md4">
-                                                            发货人：卡西欧                                                        </div>
-                                                        <div class="layui-col-md4">
-                                                            地址：广东广州                                                        </div>
-                                                        <div class="layui-col-md4">
-                                                            电话：202-12345                                                        </div>
-                                                    </div>
-                                                    <div class="layui-row">
-                                                        <div class="layui-col-md4">
-                                                            收货人：李现                                                        </div>
-                                                        <div class="layui-col-md4">
-                                                            地址：广东广州                                                        </div>
-                                                        <div class="layui-col-md4">
-                                                            电话：131-021-15-060                                                        </div>
-                                                    </div>
-                                                    <div class="layui-row">
-                                                        <div class="layui-col-md4">
-                                                            派送人：顺丰                                                        </div>
-                                                        <div class="layui-col-md4">
-                                                            电话：171-000-66-680                                                        </div>
-                                                                                                                <div class="layui-col-md4">
-                                                            <span class="layui-btn">已签收</span>
-                                                        </div>
-                                                                                                            </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                                                            <div class="layui-collapse">
-                                            <div class="layui-colla-item">
-                                                <h2 class="layui-colla-title">圆通快递</h2>
-                                                <div class="layui-colla-content layui-show">
-                                                    <div class="layui-row">
-                                                        <div class="layui-col-md4">
-                                                            发货人：迪卡侬                                                        </div>
-                                                        <div class="layui-col-md4">
-                                                            地址：上海浦东                                                        </div>
-                                                        <div class="layui-col-md4">
-                                                            电话：202-98765                                                        </div>
-                                                    </div>
-                                                    <div class="layui-row">
-                                                        <div class="layui-col-md4">
-                                                            收货人：李现                                                        </div>
-                                                        <div class="layui-col-md4">
-                                                            地址：广东潮汕                                                        </div>
-                                                        <div class="layui-col-md4">
-                                                            电话：176-999-88-77                                                        </div>
-                                                    </div>
-                                                    <div class="layui-row">
-                                                        <div class="layui-col-md4">
-                                                            派送人：圆通                                                        </div>
-                                                        <div class="layui-col-md4">
-                                                            电话：137-456-78-999                                                        </div>
-                                                                                                                    <div class="layui-col-md4">
-                                                            <span class="layui-btn layui-btn-danger">派送中</span>
-                                                        </div>
-                                                                                                            </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                                                            <div class="layui-collapse">
-                                            <div class="layui-colla-item">
-                                                <h2 class="layui-colla-title">德邦物流快递</h2>
-                                                <div class="layui-colla-content layui-show">
-                                                    <div class="layui-row">
-                                                        <div class="layui-col-md4">
-                                                            发货人：PUMA                                                        </div>
-                                                        <div class="layui-col-md4">
-                                                            地址：福建蒲田                                                        </div>
-                                                        <div class="layui-col-md4">
-                                                            电话：200020                                                        </div>
-                                                    </div>
-                                                    <div class="layui-row">
-                                                        <div class="layui-col-md4">
-                                                            收货人：李现                                                        </div>
-                                                        <div class="layui-col-md4">
-                                                            地址：广东清远                                                        </div>
-                                                        <div class="layui-col-md4">
-                                                            电话：999                                                        </div>
-                                                    </div>
-                                                    <div class="layui-row">
-                                                        <div class="layui-col-md4">
-                                                            派送人：德邦物流                                                        </div>
-                                                        <div class="layui-col-md4">
-                                                            电话：                                                        </div>
-                                                                                                                    <div class="layui-col-md4">
-                                                            <span class="layui-btn layui-btn-danger">派送中</span>
-                                                        </div>
-                                                                                                            </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                                                    </div>
-                                <div class="layui-tab-item">
-                                    <!-- 寄件 -->
-                                    <form class="layui-form" method="post" action="http://127.0.0.1/index.php/home/get_pag.html">
-                                        <!-- 发货人填写资料 -->
-                                        <br>
-                                        <div>
+    </div>
+    <!-- 防止直接访问文件 -->
+    <!-- 页面内容 -->
+    <div class="content">
+        <!-- 页面居中 -->
+        <div class="layui-container" style="height: 600px;">
+            <!-- 页面栅格化 3：9 -->
+            <div class="layui-row ">
+                <!-- 左边系统头像 -->
+                <div class="layui-col-md3 layui-bg-cyan" style="height: 600px;">
+                    <div style="height: 650px;">
+                        <br><br><br><br>
+                        <!-- 系统头像 -->
+                        <img src="../pic/stu2.jpg" alt="系统头像" class="center-block img-circle" style="width: 220px; height: 220px;">
+                        <br><br><br>
+                        <h1 class="text-center ">你好, 李现</h1>
+                        <hr>
+                        <h3 class="text-center ">用户：10010</h3>
+                        <hr>
+                        <h3 class="text-center">帐号：学生</h3>
+                    </div>
+                </div>
+                <!-- 右边个人信息窗口 -->
+                <div class="layui-col-md9">
+                    <div class="layui-tab layui-tab-card">
+                        <ul class="layui-tab-title">
+                            <li class="layui-this">包裹详情</li>
+                            <li>寄件</li>
+                        </ul>
+                        <div class="layui-tab-content" style="height: 527px;">
+                            <div class="layui-tab-item layui-show">
+                                <div class="layui-collapse">
+                                    <div class="layui-colla-item">
+                                        <h2 class="layui-colla-title">顺丰快递</h2>
+                                        <div class="layui-colla-content layui-show">
                                             <div class="layui-row">
-                                                <div class="layui-col-md6">
-                                                    <div class="layui-form-item">
-                                                        <label class="layui-form-label">发货人：</label>
-                                                        <div class="layui-input-block">
-                                                            <input type="text" name="s_name" required lay-verify="required" placeholder="请输入发货人姓名..." autocomplete="off" class="layui-input">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="layui-col-md6">
-                                                    <div class="layui-form-item">
-                                                        <label class="layui-form-label">电话：</label>
-                                                        <div class="layui-input-block">
-                                                            <input type="text" name="s_phone" required lay-verify="required" placeholder="请输入发货人的电话号码..." autocomplete="off" class="layui-input">
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                <div class="layui-col-md4">
+                                                    发货人：卡西欧 </div>
+                                                <div class="layui-col-md4">
+                                                    地址：广东广州 </div>
+                                                <div class="layui-col-md4">
+                                                    电话：202-12345 </div>
                                             </div>
                                             <div class="layui-row">
-                                                <div class="layui-col-md12">
-                                                    <div class="layui-form-item">
-                                                        <label class="layui-form-label">地址：</label>
-                                                        <div class="layui-input-block">
-                                                            <input type="text" name="s_add" required lay-verify="required" placeholder="请输入发货人的地址..." autocomplete="off" class="layui-input">
-                                                        </div>
-                                                    </div>
+                                                <div class="layui-col-md4">
+                                                    收货人：李现 </div>
+                                                <div class="layui-col-md4">
+                                                    地址：广东广州 </div>
+                                                <div class="layui-col-md4">
+                                                    电话：131-021-15-060 </div>
+                                            </div>
+                                            <div class="layui-row">
+                                                <div class="layui-col-md4">
+                                                    派送人：顺丰 </div>
+                                                <div class="layui-col-md4">
+                                                    电话：171-000-66-680 </div>
+                                                <!-- --------------------------------------------------------------区分三种物流状态----------------------------------------------------------------------------------------                                   -->
+                                                <div class="layui-col-md4">
+                                                    <span class="layui-btn">已签收</span>
                                                 </div>
                                             </div>
                                         </div>
-                                        <hr>
-                                        <!-- 收件人填写资料 -->
-                                        <div>
+                                    </div>
+                                </div>
+                                <div class="layui-collapse">
+                                    <div class="layui-colla-item">
+                                        <h2 class="layui-colla-title">圆通快递</h2>
+                                        <div class="layui-colla-content layui-show">
                                             <div class="layui-row">
-                                                <div class="layui-col-md6">
-                                                    <div class="layui-form-item">
-                                                        <label class="layui-form-label">收货人：</label>
-                                                        <div class="layui-input-block">
-                                                            <input type="text" name="p_name" required lay-verify="required" placeholder="请输入收货人姓名..." autocomplete="off" class="layui-input">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="layui-col-md6">
-                                                    <div class="layui-form-item">
-                                                        <label class="layui-form-label">电话：</label>
-                                                        <div class="layui-input-block">
-                                                            <input type="text" name="p_phone" required lay-verify="required" placeholder="请输入收货人的电话号码..." autocomplete="off" class="layui-input">
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                <div class="layui-col-md4">
+                                                    发货人：迪卡侬 </div>
+                                                <div class="layui-col-md4">
+                                                    地址：上海浦东 </div>
+                                                <div class="layui-col-md4">
+                                                    电话：202-98765 </div>
                                             </div>
                                             <div class="layui-row">
-                                                <div class="layui-col-md12">
-                                                    <div class="layui-form-item">
-                                                        <label class="layui-form-label">地址：</label>
-                                                        <div class="layui-input-block">
-                                                            <input type="text" name="p_add" required lay-verify="required" placeholder="请输入收货人的地址..." autocomplete="off" class="layui-input">
-                                                        </div>
-                                                    </div>
+                                                <div class="layui-col-md4">
+                                                    收货人：李现 </div>
+                                                <div class="layui-col-md4">
+                                                    地址：广东潮汕 </div>
+                                                <div class="layui-col-md4">
+                                                    电话：176-999-88-77 </div>
+                                            </div>
+                                            <div class="layui-row">
+                                                <div class="layui-col-md4">
+                                                    派送人：圆通 </div>
+                                                <div class="layui-col-md4">
+                                                    电话：137-456-78-999 </div>
+                                                <!-- --------------------------------------------------------------区分三种物流状态----------------------------------------------------------------------------------------                                   -->
+                                                <div class="layui-col-md4">
+                                                    <span class="layui-btn">已签收</span>
                                                 </div>
                                             </div>
                                         </div>
-                                        <hr>
-                                        <!-- 物流公司填写资料 -->
-                                        <div>
+                                    </div>
+                                </div>
+                                <div class="layui-collapse">
+                                    <div class="layui-colla-item">
+                                        <h2 class="layui-colla-title">德邦物流快递</h2>
+                                        <div class="layui-colla-content layui-show">
                                             <div class="layui-row">
-                                                <div class="layui-col-md6">
-                                                    <div class="layui-form-item">
-                                                        <label class="layui-form-label">取件快递：</label>
-                                                        <div class="layui-input-block">
-                                                            <input type="text" name="user_name" required lay-verify="required" placeholder="请填写您要选寄快递公司..." autocomplete="off" class="layui-input">
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                <div class="layui-col-md4">
+                                                    发货人：PUMA </div>
+                                                <div class="layui-col-md4">
+                                                    地址：福建蒲田 </div>
+                                                <div class="layui-col-md4">
+                                                    电话：200020 </div>
                                             </div>
                                             <div class="layui-row">
-                                                <div class="layui-col-md12">
-                                                    <div class="layui-form-item">
-                                                        <label class="layui-form-label">状态：</label>
-                                                        <div class="layui-input-block">
-                                                            <input type="text" name="pag_state" required lay-verify="required" value="待取件" autocomplete="off" class="layui-input">
-                                                        </div>
-                                                    </div>
+                                                <div class="layui-col-md4">
+                                                    收货人：李现 </div>
+                                                <div class="layui-col-md4">
+                                                    地址：广东清远 </div>
+                                                <div class="layui-col-md4">
+                                                    电话：999 </div>
+                                            </div>
+                                            <div class="layui-row">
+                                                <div class="layui-col-md4">
+                                                    派送人：德邦物流 </div>
+                                                <div class="layui-col-md4">
+                                                    电话：202-65445 </div>
+                                                <!-- --------------------------------------------------------------区分三种物流状态----------------------------------------------------------------------------------------                                   -->
+                                                <div class="layui-col-md4">
+                                                    <span class="layui-btn">已签收</span>
                                                 </div>
                                             </div>
                                         </div>
-                                        <br>
-                                        <div class="layui-form-item">
-                                            <div class="layui-input-block">
-                                                <button class="layui-btn" lay-submit lay-filter="formDemo">立即下单</button>
-                                            </div>
-                                        </div>
-                                    </form>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="layui-tab-item">
+                                <!-- 寄件 -->
+                                <form class="layui-form" method="post" action="http://127.0.0.1/index.php/home/get_pag.html">
+                                    <!-- 发货人填写资料 -->
+                                    <br>
+                                    <div>
+                                        <div class="layui-row">
+                                            <div class="layui-col-md6">
+                                                <div class="layui-form-item">
+                                                    <label class="layui-form-label">发货人：</label>
+                                                    <div class="layui-input-block">
+                                                        <input type="text" name="s_name" required lay-verify="required" placeholder="请输入发货人姓名..." autocomplete="off" class="layui-input">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="layui-col-md6">
+                                                <div class="layui-form-item">
+                                                    <label class="layui-form-label">电话：</label>
+                                                    <div class="layui-input-block">
+                                                        <input type="text" name="s_phone" required lay-verify="required" placeholder="请输入发货人的电话号码..." autocomplete="off" class="layui-input">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="layui-row">
+                                            <div class="layui-col-md12">
+                                                <div class="layui-form-item">
+                                                    <label class="layui-form-label">地址：</label>
+                                                    <div class="layui-input-block">
+                                                        <input type="text" name="s_add" required lay-verify="required" placeholder="请输入发货人的地址..." autocomplete="off" class="layui-input">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <!-- 收件人填写资料 -->
+                                    <div>
+                                        <div class="layui-row">
+                                            <div class="layui-col-md6">
+                                                <div class="layui-form-item">
+                                                    <label class="layui-form-label">收货人：</label>
+                                                    <div class="layui-input-block">
+                                                        <input type="text" name="p_name" required lay-verify="required" placeholder="请输入收货人姓名..." autocomplete="off" class="layui-input">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="layui-col-md6">
+                                                <div class="layui-form-item">
+                                                    <label class="layui-form-label">电话：</label>
+                                                    <div class="layui-input-block">
+                                                        <input type="text" name="p_phone" required lay-verify="required" placeholder="请输入收货人的电话号码..." autocomplete="off" class="layui-input">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="layui-row">
+                                            <div class="layui-col-md12">
+                                                <div class="layui-form-item">
+                                                    <label class="layui-form-label">地址：</label>
+                                                    <div class="layui-input-block">
+                                                        <input type="text" name="p_add" required lay-verify="required" placeholder="请输入收货人的地址..." autocomplete="off" class="layui-input">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <!-- 物流公司填写资料 -->
+                                    <div>
+                                        <div class="layui-row">
+                                            <div class="layui-col-md6">
+                                                <div class="layui-form-item">
+                                                    <label class="layui-form-label">取件快递：</label>
+                                                    <div class="layui-input-block">
+                                                        <input type="text" name="user_name" required lay-verify="required" placeholder="请填写您要选寄快递公司..." autocomplete="off" class="layui-input">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="layui-row">
+                                            <div class="layui-col-md12">
+                                                <div class="layui-form-item" style="display:none;">
+                                                    <label class="layui-form-label">状态：</label>
+                                                    <div class="layui-input-block">
+                                                        <input type="text" name="pag_state" required lay-verify="required" value="待取件" autocomplete="off" class="layui-input">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="layui-form-item">
+                                        <div class="layui-input-block">
+                                            <button class="layui-btn" lay-submit lay-filter="formDemo">立即下单</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
-
                     </div>
+
                 </div>
             </div>
         </div>
-<!-- 防止直接访问文件 -->
+    </div>
+    <!-- 防止直接访问文件 -->
     <!-- 版权信息 -->
     <div class="footer" style=" bottom:0; height: 160px; width: 100%;">
-         <div class="layui-bg-black " style="height: 160px; width: 100%;">
+        <div class="layui-bg-black " style="height: 160px; width: 100%;">
             <br><br><br>
             <p class="text-center"><strong>https://gza-sunshine.github.io</strong></p>
-            <p class="text-center"><strong>校园智能快递系统 </strong>&copy <em>2019@github</em> 版权所有 <strong>GSJ</strong></p>
-            <p class="text-center"><strong>Copyright </strong>&copy<strong> ICP 备54135431号</strong></p>
+            <p class="text-center"><strong>校园智能快递系统 </strong>&copy <em>2019@github</em> 版权所有 <strong>GZA</strong></p>
+            <p class="text-center"><strong>Copyright </strong>&copy<strong> ICP 十三的猫。</strong></p>
         </div>
     </div>
-    
+
 </body>
+
 </html>
 
 <!-- JS脚本 -->
-    <script>
-        //注意：导航 依赖 element 模块，否则无法进行功能性操作
-        layui.use('element', function() {
-            var element = layui.element;
+<script>
+    //注意：导航 依赖 element 模块，否则无法进行功能性操作
+    layui.use('element', function() {
+        var element = layui.element;
 
-            //…
-        });
-    </script>
+        //…
+    });
+</script>
 
 <!-- 轮播图 -->
-    <script>
-        layui.use('carousel', function() {
-            var carousel = layui.carousel;
-            //建造实例
-            carousel.render({
-                elem: '#test1',
-                width: '100%', //设置容器宽度
-                height: '345px', //设置容器高度
-                arrow: 'hover', //悬停显示箭头
-                autoplay: 'true' //自动播放
-            });
+<script>
+    layui.use('carousel', function() {
+        var carousel = layui.carousel;
+        //建造实例
+        carousel.render({
+            elem: '#test1',
+            width: '855px', //设置容器宽度
+            height: '345px', //设置容器高度
+            arrow: 'hover', //悬停显示箭头
+            autoplay: 'true' //自动播放
         });
-    </script>
-
-    
+    });
+</script>

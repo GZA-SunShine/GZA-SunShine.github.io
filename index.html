@@ -1,120 +1,29 @@
 
-    <!-- 防止直接访问文件 -->
-    <!DOCTYPE html>
-    <html lang="en">
+<!-- 防止直接访问文件 -->
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" type="text/css" href="layui/css/layui.css"/>
-        <script src="layui/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="layui/layui.js" type="text/javascript" charset="utf-8"></script>
-        <title>校园快递管理系统</title>
-    </head><!-- 防止直接访问文件 -->
-<body>
-    <!-- 页面导航栏 -->
-    <div class="header">
-        <ul class="layui-nav">
-            <li class="layui-nav-item"><a href="index.html">校 园 智 能 快 递 系 统</a></li>
-            <li class="layui-nav-item "><a href="index.html">主页</a></li>
-            <li class="layui-nav-item"><a href="home/register.html">注册</a></li>
-            <li class="layui-nav-item">
-                <a href="javascript:;">网站详情</a>
-                <dl class="layui-nav-child">
-                    <!-- 二级菜单 -->
-                    <dd><a href="home/about1.html">开发环境</a></dd>
-                    <dd><a href="home/about2.html">开发人员</a></dd>
-                    <dd><a href="home/about3.html">开发历程</a></dd>
-                </dl>
-            </li>
-            <li class="layui-nav-item layui-col-md-offset2">
-                Wed, 18 Dec 19 22:06:28 +0800            </li>
-            <li class="layui-nav-item layui-col-md-offset2"><a href="admin/admin.html">后台</a></li>
-        </ul>
-    </div><!-- 防止直接访问文件 -->
-<!-- 页面内容 -->
-<div class="content">
-            <!-- 页面居中 -->
-            <div class="layui-container" style="height: 600px;">
-                <!-- 页面栅格化3：9 -->
-                <div class="layui-row ">
-                    <!-- 左边系统头像 -->
-                    <div class="layui-col-md3 layui-bg-cyan" style="height: 600px;">
-                        <div style="height: 650px;">
-                            <br><br><br><br>
-                            <!-- 系统头像 -->
-                            <img src="pic/home.jpg" alt="系统头像" class="center-block img-circle" style="width: 220px; height: 220px;">
-                            <br><br><br>
-                            <h1 class="text-center">欢迎使用</h1>
-                            <h1 class="text-center">校园智能快递系统</h1>
-                        </div>
-                    </div>    <!-- 防止直接访问文件 -->
-	
-                    <!-- 右边登陆页面窗口 -->
-                    <div class="layui-col-md9 layui-bg-gray " style="height: 600px;">
-                        <br>
-                        <h1 class="text-center ">登陆页面</h1>
-                        <hr>
-                        <div class="layui-row grid-demo grid-demo-bg1">
-                            <div class="layui-col-md12">
-                                <br><br><br><br>
-                            </div>
-                            <div class="layui-col-md6">
-                                <!-- 用户登陆 -->
-                                <a href="home/login_stu.html">
-                                    <img src="pic/stu.jpg" alt="学生登陆" class="center-block img-rounded" style="width: 300px; height: 300px;">
-                                </a>
-                                <h1 class="text-center h2">学生登陆</h1>
-                            </div>
-                            <div class="layui-col-md6">
-                                <!-- 快递员登陆 -->
-                                <a href="home/login_user.html">
-                                    <img src="pic/user.jpg" alt="物流登陆" class="center-block img-rounded" style="width: 300px; height: 300px;">
-                                </a>
-                                <h1 class="text-center h2">物流登陆</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="layui/css/layui.css" />
+    <script src="layui/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="layui/layui.js" type="text/javascript" charset="utf-8"></script>
+    <title>后台登陆</title>
+</head>
+
+<body class="layui-bg-black">
+    <div class="layui-bg-gray center-block img-rounded" style="width: 1000px; height: 600px;margin-top: 4%;">
+        <div class="layui-row">
+            <div class="layui-col-xs6 layui-bg-green" style="width: 500px; height: 600px;">
+            <a href="home/home.html"><img src="pic/index_left.jpg" alt="欢迎登陆前台" style="width: 500px; height: 600px;"></a>                
             </div>
-        </div><!-- 防止直接访问文件 -->
-    <!-- 版权信息 -->
-    <div class="footer" style=" bottom:0; height: 160px; width: 100%;">
-         <div class="layui-bg-black " style="height: 160px; width: 100%;">
-            <br><br><br>
-            <p class="text-center"><strong>https://gza-sunshine.github.io</strong></p>
-            <p class="text-center"><strong>校园智能快递系统 </strong>&copy <em>2019@github</em> 版权所有 <strong>GSJ</strong></p>
-            <p class="text-center"><strong>Copyright </strong>&copy<strong> ICP 备54135431号</strong></p>
+            <div class="layui-col-xs6" style="width: 500px; height: 600px;">
+            <a href="admin/login.html"><img src="pic/index_right.jpg" alt="欢迎登陆后台" style="width: 500px; height: 600px;"></a>
+            </div>
         </div>
     </div>
-    
 </body>
+
 </html>
-
-<!-- JS脚本 -->
-    <script>
-        //注意：导航 依赖 element 模块，否则无法进行功能性操作
-        layui.use('element', function() {
-            var element = layui.element;
-
-            //…
-        });
-    </script>
-
-<!-- 轮播图 -->
-    <script>
-        layui.use('carousel', function() {
-            var carousel = layui.carousel;
-            //建造实例
-            carousel.render({
-                elem: '#test1',
-                width: '100%', //设置容器宽度
-                height: '345px', //设置容器高度
-                arrow: 'hover', //悬停显示箭头
-                autoplay: 'true' //自动播放
-            });
-        });
-    </script>
-
-    

@@ -1,4 +1,5 @@
 
+<!-- 防止直接访问文件 -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,20 +12,21 @@
     <script src="../layui/layui.js" type="text/javascript" charset="utf-8"></script>
     <title>后台管理系统</title>
 </head>
+<!-- 防止直接访问文件 -->
 <body class="layui-layout-body">
     <div class="layui-layout layui-layout-admin">
         <div class="layui-header">
-            <div class="layui-logo">校园快递管理系统后台</div>
-            <!-- 头部区域（可配合layui已有的水平导航） -->
+            <div class="layui-logo"><a href="login.html">校园快递管理系统后台</a></div>
             <ul class="layui-nav layui-layout-left">
                 <li class="layui-nav-item"><a href="about.html">关于系统</a></li>
                 <li class="layui-nav-item"><a href="register.html">添加管理</a></li>
-                <li class="layui-nav-item"><a href="admin.html">退出</a></li>
+                <li class="layui-nav-item"><a href="../index.html">首页</a></li>
             </ul>
-        </div><div class="layui-side layui-bg-black">
+        </div><!-- 防止直接访问文件 -->
+<div class="layui-side layui-bg-black">
     <div class="layui-side-scroll">
         <br>
-        <div><img class="img-circle center-block" src="../pic/root.jpg" alt="管理头像" style="width: 170px; height: 170px;"></div>
+        <div><img class="img-circle center-block" src="../pic/root1.jpg" alt="管理头像" style="width: 170px; height: 170px;"></div>
         <br><br><br>
         <h1 class="text-center ">欢迎登陆</h1>
         <hr>
@@ -36,7 +38,7 @@
 <p>Severity: Notice</p>
 <p>Message:  Undefined variable: log</p>
 <p>Filename: content_left/content_left_info.php</p>
-<p>Line Number: 8</p>
+<p>Line Number: 12</p>
 
 
 	<p>Backtrace:</p>
@@ -48,7 +50,7 @@
 		
 			<p style="margin-left:10px">
 			File: D:\phpstudy\WWW\mmd\application\views\admin\content_left\content_left_info.php<br />
-			Line: 8<br />
+			Line: 12<br />
 			Function: _error_handler			</p>
 
 		
@@ -60,7 +62,7 @@
 		
 			<p style="margin-left:10px">
 			File: D:\phpstudy\WWW\mmd\application\controllers\admin\user.php<br />
-			Line: 23<br />
+			Line: 22<br />
 			Function: view			</p>
 
 		
@@ -82,9 +84,10 @@
         <h3 class="text-center ">系统时间：</h3>
         <br>
         <h4>
-        Wed, 18 Dec 19 23:16:20 +0800        </h4>
+        Mon, 23 Dec 19 20:05:34 +0800        </h4>
     </div>
-</div><div class="layui-body">
+</div><!-- 防止直接访问文件 -->
+<div class="layui-body">
             <!-- 内容主体区域 -->
 						<br>
                         <h1 class="text-center ">开发环境</h1>
@@ -114,7 +117,7 @@
                             </div>
                         </div>
 
-        </div>
+        </div><!-- 防止直接访问文件 -->
         <div class="layui-footer">
             <!-- 底部固定区域 -->
             <p><strong>MMD。</strong>&copy <em> 2019 @github</em> 版权所有 <strong>GSJ</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong><em> .\_/.</em></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="https://gza-sunshine.github.io">https://gza-sunshine.github.io</a></strong></p>
